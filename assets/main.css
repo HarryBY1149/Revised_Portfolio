@@ -1,0 +1,41 @@
+body{
+    background-image: url("images/sandra-ahn-mode-639475-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.spacer1{
+    height: 6rem;
+}
+
+#name{
+    color:#A1CDA8;
+    background-color: #58665aa4;
+}
+
+.blurb{
+    color:#A1CDA8;
+    background-color: #58665aa4;
+}
+
+#github{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.project{
+    height: 250px;
+    width: 250px;
+}
+
+.label{
+    color: #A1CDA8;
+    background-color: #58665aa4;
+    position: absolute;
+    bottom: -10px;
+}
+
+
+
+
