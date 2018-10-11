@@ -36,6 +36,20 @@ body{
     bottom: -10px;
 }
 
+#img-cont{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+    background:#58665aa4;
+}
+::-webkit-scrollbar-thumb{
+    color:#A1CDA8;
+}
 
 
 
