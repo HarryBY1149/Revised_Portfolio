@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $("#detail-display").hide();
+
     var projectDetails = {
         recipeFinder: {
             link: 'https://my-recipes-storage.firebaseapp.com',
@@ -15,11 +17,11 @@ $(document).ready(function () {
             tools: 'Tools: HTML5, CSS3, JS, JQuery, node.js, handlebars.js, express.js'
         },
         selfKingdom: {
-            link: 'https://glacial-wave-11290.herokuapp.com/',
+            link: 'https://nameless-thicket-61553.herokuapp.com',
             description: 'A gamified, fullstack task management application that uses casual game techniques to encourage users to get stuff done.',
             github: 'https://github.com/brijamfitz/project-2',
             image: 'assets/images/login-castle.png',
-            tools: 'Tools: HTML5, CSS3, JS, JQuery, Bootstrap, node.js, handlebars.js, passport.js, express.js, sessions.js, sequelize.js'
+            tools: 'Tools: HTML5, CSS3, JS, JQuery, Bootstrap, node.js, handlebars.js, passport.js, express.js and sequelize.js, '
         }
     }
 
@@ -27,13 +29,12 @@ $(document).ready(function () {
 
     $(".img-cont").mouseenter(function () {
         $(".img-cont").removeClass("hover")
-        $("#detail-image-tools").empty();
-        $("#link-github").empty();
+        $("#detail-display").empty();
         $(this).addClass("hover");
         var project = $(this).data('id')
         var data = projectDetails[project];
         var body = $("<div>")
-        body.addClass("mx-auto detail-cont")
+        body.addClass("mx-auto detail-cont mt-3")
         var image = $("<img>")
         image.addClass("img-fluid mx-auto project-img");
         image.attr("src", data.image)
@@ -47,17 +48,28 @@ $(document).ready(function () {
         tools.addClass("text-center");
         tools.append(data.tools);
         body.append(tools);
-        $("#detail-image-tools").append(body);
+        $("#detail-display").append(body);
+        var links = $("<div>")
+        links.addClass("col-md-4 mx-auto")
         var appLink = $("<a>");
         appLink.attr("href", data.link);
-        appLink.addClass("mx-4");
+        appLink.attr("target", "_blank")
+        appLink.addClass("float-left");
         appLink.append("<p>The deployed app</p>");
         var gitLink = $("<a>");
         gitLink.attr("href", data.github);
-        gitLink.addClass("mx-4");
+        gitLink.addClass("float-right");
         gitLink.append("<p>The github repo</p>");
-        $("#link-github").append(appLink, gitLink)
-    })
+        links.append(appLink, gitLink);
+        $("#detail-display").append(links);
+        $("#detail-display").show();
+        setTimeout(function(){
+            $("#detail-display").hide();
+        }, 15000);
+    });
+
+    
+
 });
 
 
