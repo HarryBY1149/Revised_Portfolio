@@ -55,16 +55,20 @@ p {
     color:#e7a11f;
 }
 
+h4 {
+    color: #e7a11f;
+}
+
 .detail-cont{
     width: 100%;
 }
 
 a p {
-    color: #BA1200;
+    color:rgb(112, 22, 12);
 }
 
 a:hover{
-    text-decoration-color: #BA1200;
+    text-decoration-color:rgb(112, 22, 12);
 }
 
 ::-webkit-scrollbar{

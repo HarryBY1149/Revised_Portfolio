@@ -64,7 +64,7 @@ $(document).ready(function () {
         $("#detail-display").show();
         setTimeout(function(){
             $("#detail-display").hide();
-        }, 15000);
+        }, 20000);
     });
 
     
