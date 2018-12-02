@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    $("#detail-display").hide();
 
     var projectDetails = {
         recipeFinder: {

@@ -1,36 +1,27 @@
 body{
-    background-color: #F8FFF4;
+    background-image: url("connectwork/connectwork.png");
+    background-repeat: repeat;
     overflow-y: scroll;
     text-decoration: none;
 }
 
 .body-container{
-    background-color: #F8FFF4;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .header{
-    border-bottom: 0.5rem solid #BA1200;
-}
-
-#headshot{
-    height: 200px;
-    width: 258px;
-    object-fit: contain;
-    border-radius: 50px
+    border-bottom: 0.5rem solid rgb(112, 22, 12);
 }
 
 #name{
-    color:#031927;
-    font-size: 4rem;
+    color:rgb(112, 22, 12);
+    font-size: 3rem;
     margin-left : -1rem;
 }
 
 .blurb{
-    color:#031927;    
-}
-
-#github{
-    size: 58px;
+    color:#e7a11f;    
 }
 
 #linked-in {
@@ -38,11 +29,15 @@ body{
 }
 
 .label{
-    color: #031927;
+    color: #e7a11f;
    
 }
+
+h5{
+    color:#e7a11f;
+}
 .hover{
-    border-bottom: 0.5rem solid #BA1200;
+    border-bottom: 0.5rem solid rgb(112, 22, 12);
 }
 
 #img-row{
@@ -57,11 +52,7 @@ body{
 
 
 p {
-    color:#031927;
-}
-
-h4 {
-    color:#031927;
+    color:#e7a11f;
 }
 
 .detail-cont{
@@ -83,7 +74,7 @@ a:hover{
     background:#58665aa4;
 }
 ::-webkit-scrollbar-thumb{
-    color:#031927;
+    color:#d89632;
 }
 
 
