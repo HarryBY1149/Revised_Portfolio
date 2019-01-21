@@ -32,22 +32,26 @@ body{
     color: #e7a11f;
    
 }
+.selector-container {
+    border: 0.5rem solid rgb(112, 22, 12);
+}
 
 h5{
     color:#e7a11f;
 }
+
+.img-box{
+    width: 100%;
+    height: 100%;
+}
+
 .hover{
-    border-bottom: 0.5rem solid rgb(112, 22, 12);
+    background-color: rgba(112,22,12,0.7);
 }
 
 #img-row{
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-.project-image {
-    height: 128px;
-    width: 128px;
 }
 
 
@@ -63,8 +67,9 @@ h4 {
     width: 100%;
 }
 
-a p {
+.project-link{
     color:rgb(112, 22, 12);
+    font-weight: 900;
 }
 
 a:hover{
